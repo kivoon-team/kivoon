@@ -1,0 +1,13 @@
+{
+  "name": "kivoon",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Hebrew-first PWA for discovering data leadership roles in Israel",
+  "scripts": {
+    "start": "node server.cjs",
+    "check": "node --check app.js && node --check sw.js && node --check server.cjs"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

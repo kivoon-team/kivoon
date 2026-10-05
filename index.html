@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#173e36"><meta name="description" content="כיוון — המקום האישי שלך לתפקיד הניהולי הבא בדאטה">
+  <link rel="manifest" href="/manifest.webmanifest"><link rel="icon" href="/icon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="/icon-192.png">
+  <link rel="stylesheet" href="/style.css"><title>כיוון — התפקיד הבא שלך</title>
+</head>
+<body>
+<a class="skip" href="#main">דילוג לתוכן</a>
+<aside class="sidebar">
+  <a class="brand" href="#jobs" aria-label="כיוון — עמוד הבית"><span class="brand-icon" data-icon="compass"></span><span>כיוון<span class="brand-sub">הקריירה שלך. קדימה.</span></span></a>
+  <div class="workspace-label">המרחב האישי שלך</div>
+  <nav aria-label="ניווט ראשי">
+    <a class="nav-item active" href="#jobs" data-view="jobs"><span data-icon="grid"></span>גילוי משרות<span class="nav-count">5</span></a>
+    <a class="nav-item" href="#saved" data-view="saved"><span data-icon="bookmark"></span>המשרות ששמרתי<span class="nav-count" id="saved-count">0</span></a>
+    <a class="nav-item" href="#tracking" data-view="tracking"><span data-icon="layers"></span>התהליך שלי<span class="nav-count" id="tracking-count">0</span></a>
+    <a class="nav-item" href="#south" data-view="south"><span data-icon="map"></span>הזדמנויות בדרום</a>
+  </nav>
+  <div class="sidebar-card"><span class="small-star" data-icon="sparkles"></span><strong>הצעד הבא, בתנאים שלך.</strong><p>ניסיון, תחומי עניין ומיקום.<br>החיפוש מתחיל במה שחשוב לך.</p><button class="text-button" data-action="preferences">דיוק ההעדפות <span data-icon="arrow"></span></button></div>
+  <div class="sidebar-bottom"><button class="nav-item" data-action="install"><span data-icon="download"></span>התקנת האפליקציה</button><button class="profile" data-action="preferences"><span class="avatar">של</span><span><strong>הפרופיל שלי</strong><small>ניהול · דאטה · השלב הבא</small></span><span data-icon="chevron"></span></button></div>
+</aside>
+<div class="app-shell">
+ <header class="topbar"><div class="breadcrumb">המרחב שלי <span>/</span> <strong id="breadcrumb-title">גילוי משרות</strong></div><div class="top-actions"><span class="demo-badge"><i></i> תצוגה מקדימה</span><button class="icon-button" data-action="about" aria-label="על תצוגת ההדגמה"><span data-icon="info"></span></button><span class="top-avatar">של</span></div></header>
+ <main id="main">
+  <section class="welcome"><div><div class="eyebrow"><span class="tiny-line"></span> מקום חדש לצמוח בו</div><h1>הניסיון שלך.<br class="mobile-break"> <span>הכיוון הבא.</span></h1><p>תפקידי ניהול בדאטה, עם מקום למה שחשוב לך.</p></div><button class="button outlined" data-action="preferences"><span data-icon="sliders"></span>העדפות החיפוש</button></section>
+  <section class="overview" aria-label="סקירת החיפוש">
+   <div class="overview-main"><span class="stat-icon" data-icon="briefcase"></span><div><strong>05</strong><span>משרות לעיון</span></div><span class="stat-note">בנתוני ההדגמה</span></div>
+   <button class="overview-stat" data-action="remote"><span class="stat-icon" data-icon="globe"></span><div><strong>02</strong><span>מאפשרות עבודה מרחוק בישראל</span></div><span data-icon="arrow"></span></button>
+   <button class="overview-stat" data-action="saved"><span class="stat-icon" data-icon="bookmark"></span><div><strong id="stat-saved">00</strong><span>משרות ששמרת להמשך</span></div><span data-icon="arrow"></span></button>
+  </section>
+  <div class="content-grid">
+   <section class="jobs-section" aria-labelledby="list-title">
+    <div class="section-heading"><div><h2 id="list-title">משרות על הרדאר</h2><p id="list-subtitle">הזדמנויות ששווה להכיר, והמידע שיעזור לך לבחור.</p></div><span class="small-label">אוסף ראשוני</span></div>
+    <div class="search-area"><label class="search-input"><span data-icon="search"></span><span class="sr-only">חיפוש לפי תפקיד או חברה</span><input id="search" type="search" placeholder="תפקיד, חברה או תחום שמעניין אותך…" autocomplete="off"><kbd>/</kbd></label><button id="filter-toggle" class="filter-button" aria-expanded="false" aria-controls="extra-filters"><span data-icon="sliders"></span><span>סינון</span></button></div>
+    <div id="extra-filters" class="extra-filters" hidden><label>תחום מקצועי<select id="domain"><option value="all">כל התחומים</option><option value="bi">בינה עסקית</option><option value="science">מדע הנתונים</option><option value="engineering">הנדסת נתונים ותשתיות</option></select></label><label>אופי התפקיד<select id="leadership"><option value="all">כל התפקידים</option><option value="people">ניהול עובדים</option><option value="professional">הובלה מקצועית</option></select></label></div>
+    <div class="filter-row"><div class="chips" role="group" aria-label="מיקום המשרה"><button class="chip selected" data-region="all" aria-pressed="true">כל המיקומים</button><button class="chip" data-region="south" aria-pressed="false"><span data-icon="sun"></span>דרום</button><button class="chip" data-region="center" aria-pressed="false">מרכז</button><button class="chip" data-region="remote" aria-pressed="false">מרחוק בישראל</button></div><span id="result-count" aria-live="polite">5 משרות</span></div>
+    <div id="job-list" class="job-list"></div>
+    <div class="data-note"><span data-icon="info"></span><span>נתוני הדגמה המבוססים על המחקר מ־5.10.2026. פתיחת המשרה במקור מאפשרת לבדוק את מצבה העדכני.</span></div>
+   </section>
+   <aside class="insights" aria-label="תובנות והעדפות">
+    <section class="south-card"><div class="south-art" aria-hidden="true"><svg viewBox="0 0 400 210"><defs><pattern id="mapgrid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#ffffff" stroke-opacity=".08"/></pattern></defs><rect width="400" height="210" fill="url(#mapgrid)"/><path d="M0 180 Q70 100 145 175 T330 160 T440 100 M-20 150 Q80 70 180 150 T410 80 M-20 120 Q90 35 195 115 T410 40 M-20 85 Q85 0 210 80 T410 0" fill="none" stroke="#b8c5a4" stroke-opacity=".3"/><circle cx="198" cy="95" r="48" fill="#dee7c8" opacity=".05"/><circle cx="198" cy="95" r="25" fill="none" stroke="#d7e6b8" opacity=".3"/><circle cx="198" cy="95" r="7" fill="#d9e9bb"/><path d="M198 103v41" stroke="#d9e9bb" stroke-dasharray="3 5"/><circle cx="198" cy="148" r="3" fill="#d9e9bb"/></svg><span class="map-label">הדרום, במרכז החיפוש.</span><span class="map-coordinate" dir="ltr">31.25° N / 34.79° E</span></div><div class="south-content"><span class="eyebrow light">קרוב יותר לבית</span><h2>כיוון דרום</h2><p>יש חברות עם פעילות בדרום.<br>נבדוק גם אם התפקיד יכול להיות שם.</p><div class="south-facts"><span><i></i>מיקום המשרה</span><span><i></i>פעילות החברה בדרום</span><span><i></i>אפשרות לעבוד משם</span></div><button class="south-cta" data-action="south">לגלות את החברות <span data-icon="arrow"></span></button></div></section>
+    <section class="profile-card"><div class="panel-title"><span data-icon="sliders"></span><h3>החיפוש שלך, בקצרה</h3><button class="icon-button" data-action="preferences" aria-label="עריכת העדפות"><span data-icon="edit"></span></button></div><dl><div><dt>התפקיד הבא</dt><dd>ניהול צוות, קבוצה או תחום</dd></div><div><dt>העולמות שלך</dt><dd>דאטה, אנליטיקה, BI ו־AI</dd></div><div><dt>המיקום המועדף</dt><dd id="preference-summary">דרום ומרכז · עדיפות לדרום</dd></div></dl><div class="profile-hint"><span data-icon="sparkles"></span><p>עוד קצת על הניסיון הניהולי שלך, וההתאמה תהיה מדויקת יותר.</p></div><button class="text-button" data-action="preferences">השלמת פרופיל החיפוש <span data-icon="arrow"></span></button></section>
+    <p class="quiet-note"><span data-icon="shield"></span>החיפוש בקצב שלך.<br>מועמדות נשלחת רק על ידך.</p>
+   </aside>
+  </div>
+ </main>
+ <footer>כיוון <span>צעד קטן בחיפוש. צעד גדול בקריירה.</span><span>גרסת ממשק ראשונית</span></footer>
+</div>
+<nav class="mobile-nav" aria-label="ניווט בנייד"><a href="#jobs" data-view="jobs"><span data-icon="grid"></span>גילוי</a><a href="#saved" data-view="saved"><span data-icon="bookmark"></span>שמורות</a><a href="#tracking" data-view="tracking"><span data-icon="layers"></span>התהליך שלי</a><a href="#south" data-view="south"><span data-icon="map"></span>דרום</a></nav>
+<dialog id="dialog"><div id="dialog-body"></div></dialog><div id="toast" class="toast" role="status"></div><div id="offline" class="offline" hidden>אין חיבור לרשת · אפשר להמשיך לעיין ולשמור משרות במכשיר.</div>
+<script src="/app.js" defer></script>
+</body></html>

@@ -5,7 +5,8 @@
   "description": "Hebrew-first PWA for discovering data leadership roles in Israel",
   "scripts": {
     "start": "node server.cjs",
-    "check": "node --check app.js && node --check sw.js && node --check server.cjs"
+    "build": "npm run check && node build.cjs",
+    "check": "node --check app.js && node --check sw.js && node --check server.cjs && node --check build.cjs"
   },
   "engines": {
     "node": ">=22"

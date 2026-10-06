@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node server.cjs",
     "build": "npm run check && node build.cjs",
-    "check": "node --check app.js && node --check sw.js && node --check server.cjs && node --check build.cjs"
+    "check": "node --check app.js && node --check sw.js && node --check server.cjs && node --check build.cjs && node --check greenhouse.cjs && node --check api/jobs.js"
   },
   "engines": {
     "node": ">=22"
